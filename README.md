@@ -41,10 +41,13 @@
   
 - 🔹 Technology details modal
 
+![Screenshot 2025-06-28 005259](https://github.com/user-attachments/assets/0ed7ee38-6c52-4371-be1f-3dd5a3e9bf3d)
 
   
-- 🔹 Timeline roadmap
 - 🔹 About section and responsive layout
+
+![Screenshot 2025-06-28 005428](https://github.com/user-attachments/assets/82f9a844-09a8-4e66-9399-912ea250e8cc)
+
 
 ---
 
