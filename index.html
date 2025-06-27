@@ -422,88 +422,115 @@
     <script>
         // Sample technology data (simulating API response)
         const technologiesData = [
-            {
-                name: "React",
-                category: "frontend",
-                description: "A JavaScript library for building user interfaces with component-based architecture.",
-                popularity: 95,
-                github_stars: "220k",
-                latest_version: "18.2.0",
-                logo: "https://cdn.worldvectorlogo.com/logos/react-2.svg"
-            },
-            {
-                name: "Node.js",
-                category: "backend",
-                description: "JavaScript runtime built on Chrome's V8 engine for server-side development.",
-                popularity: 92,
-                github_stars: "105k",
-                latest_version: "20.10.0",
-                logo: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
-            },
-            {
-                name: "MongoDB",
-                category: "database",
-                description: "NoSQL document database with high performance and scalability.",
-                popularity: 88,
-                github_stars: "26k",
-                latest_version: "7.0",
-                logo: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg"
-            },
-            {
-                name: "Docker",
-                category: "devops",
-                description: "Platform for developing, shipping, and running applications in containers.",
-                popularity: 90,
-                github_stars: "68k",
-                latest_version: "24.0.7",
-                logo: "https://cdn.worldvectorlogo.com/logos/docker.svg"
-            },
-            {
-                name: "AWS",
-                category: "cloud",
-                description: "Comprehensive cloud computing platform with global infrastructure.",
-                popularity: 94,
-                github_stars: "N/A",
-                latest_version: "Latest",
-                logo: "https://cdn.worldvectorlogo.com/logos/aws-2.svg"
-            },
-            {
-                name: "Vue.js",
-                category: "frontend",
-                description: "Progressive JavaScript framework for building user interfaces.",
-                popularity: 87,
-                github_stars: "207k",
-                latest_version: "3.3.8",
-                logo: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg "
-            },
-            {
-                name: "Express.js",
-                category: "backend",
-                description: "Fast, minimalist web framework for Node.js applications.",
-                popularity: 89,
-                github_stars: "64k",
-                latest_version: "4.18.2",
-                logo: "https://icon.icepanel.io/Technology/png-shadow-512/Express.png"
-            },
-            {
-                name: "PostgreSQL",
-                category: "database",
-                description: "Advanced open-source relational database with SQL compliance.",
-                popularity: 91,
-                github_stars: "15k",
-                latest_version: "16.1",
-                logo: "https://cdn.worldvectorlogo.com/logos/postgresql.svg"
-            },
-            {
-                name: "Kubernetes",
-                category: "devops",
-                description: "Container orchestration platform for automating deployment and scaling.",
-                popularity: 86,
-                github_stars: "108k",
-                latest_version: "1.28.4",
-                logo: "https://www.svgrepo.com/download/341977/kubernetes.svg"
-            }
-        ];
+  {
+    name: "React",
+    category: "frontend",
+    description: "A JavaScript library for building user interfaces with component-based architecture.",
+    popularity: 95,
+    github_stars: "220k",
+    latest_version: "18.2.0",
+    logo: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+    documentation_url: "https://react.dev/",
+    github_url: "https://github.com/facebook/react",
+    tutorial_url: "https://reactjs.org/tutorial/tutorial.html"
+  },
+  {
+    name: "Node.js",
+    category: "backend",
+    description: "JavaScript runtime built on Chrome's V8 engine for server-side development.",
+    popularity: 92,
+    github_stars: "105k",
+    latest_version: "20.10.0",
+    logo: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
+    documentation_url: "https://nodejs.org/en/docs/",
+    github_url: "https://github.com/nodejs/node",
+    tutorial_url: "https://www.w3schools.com/nodejs/"
+  },
+  {
+    name: "MongoDB",
+    category: "database",
+    description: "NoSQL document database with high performance and scalability.",
+    popularity: 88,
+    github_stars: "26k",
+    latest_version: "7.0",
+    logo: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
+    documentation_url: "https://www.mongodb.com/docs/",
+    github_url: "https://github.com/mongodb/mongo",
+    tutorial_url: "https://www.mongodb.com/basics"
+  },
+  {
+    name: "Docker",
+    category: "devops",
+    description: "Platform for developing, shipping, and running applications in containers.",
+    popularity: 90,
+    github_stars: "68k",
+    latest_version: "24.0.7",
+    logo: "https://cdn.worldvectorlogo.com/logos/docker.svg",
+    documentation_url: "https://docs.docker.com/",
+    github_url: "https://github.com/docker",
+    tutorial_url: "https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker"
+  },
+  {
+    name: "AWS",
+    category: "cloud",
+    description: "Comprehensive cloud computing platform with global infrastructure.",
+    popularity: 94,
+    github_stars: "N/A",
+    latest_version: "Latest",
+    logo: "https://cdn.worldvectorlogo.com/logos/aws-2.svg",
+    documentation_url: "https://docs.aws.amazon.com/",
+    github_url: "https://github.com/aws",
+    tutorial_url: "https://aws.amazon.com/getting-started/"
+  },
+  {
+    name: "Vue.js",
+    category: "frontend",
+    description: "Progressive JavaScript framework for building user interfaces.",
+    popularity: 87,
+    github_stars: "207k",
+    latest_version: "3.3.8",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
+    documentation_url: "https://vuejs.org/guide/introduction.html",
+    github_url: "https://github.com/vuejs/vue",
+    tutorial_url: "https://vuejs.org/tutorial/"
+  },
+  {
+    name: "Express.js",
+    category: "backend",
+    description: "Fast, minimalist web framework for Node.js applications.",
+    popularity: 89,
+    github_stars: "64k",
+    latest_version: "4.18.2",
+    logo: "https://icon.icepanel.io/Technology/png-shadow-512/Express.png",
+    documentation_url: "https://expressjs.com/",
+    github_url: "https://github.com/expressjs/express",
+    tutorial_url: "https://www.javatpoint.com/expressjs-tutorial"
+  },
+  {
+    name: "PostgreSQL",
+    category: "database",
+    description: "Advanced open-source relational database with SQL compliance.",
+    popularity: 91,
+    github_stars: "15k",
+    latest_version: "16.1",
+    logo: "https://cdn.worldvectorlogo.com/logos/postgresql.svg",
+    documentation_url: "https://www.postgresql.org/docs/",
+    github_url: "https://github.com/postgres/postgres",
+    tutorial_url: "https://www.tutorialspoint.com/postgresql/"
+  },
+  {
+    name: "Kubernetes",
+    category: "devops",
+    description: "Container orchestration platform for automating deployment and scaling.",
+    popularity: 86,
+    github_stars: "108k",
+    latest_version: "1.28.4",
+    logo: "https://www.svgrepo.com/download/341977/kubernetes.svg",
+    documentation_url: "https://kubernetes.io/docs/home/",
+    github_url: "https://github.com/kubernetes/kubernetes",
+    tutorial_url: "https://kubernetes.io/docs/tutorials/"
+  }
+];
 
         let currentTechnologies = technologiesData;
         let displayedCount = 6;
@@ -662,63 +689,83 @@
         }
 
         // Enhanced technology data with more details
-        const enhancedTechnologies = [
-            ...technologiesData,
-            {
-                name: "TypeScript",
-                category: "frontend",
-                description: "Strongly typed programming language that builds on JavaScript.",
-                popularity: 93,
-                github_stars: "98k",
-                latest_version: "5.3.2",
-                logo: "https://cdn.worldvectorlogo.com/logos/typescript.svg"
-            },
-            {
-                name: "Python",
-                category: "backend",
-                description: "High-level programming language for web development and data science.",
-                popularity: 96,
-                github_stars: "58k",
-                latest_version: "3.12.0",
-                logo: "https://cdn.worldvectorlogo.com/logos/python-5.svg"
-            },
-            {
-                name: "Redis",
-                category: "database",
-                description: "In-memory data structure store for caching and real-time applications.",
-                popularity: 84,
-                github_stars: "65k",
-                latest_version: "7.2.3",
-                logo: "https://cdn.worldvectorlogo.com/logos/redis.svg"
-            },
-            {
-                name: "Jenkins",
-                category: "devops",
-                description: "Open-source automation server for continuous integration and deployment.",
-                popularity: 78,
-                github_stars: "22k",
-                latest_version: "2.426.1",
-                logo: "https://cdn.worldvectorlogo.com/logos/jenkins-1.svg"
-            },
-            {
-                name: "Azure",
-                category: "cloud",
-                description: "Microsoft cloud computing platform with integrated services.",
-                popularity: 89,
-                github_stars: "N/A",
-                latest_version: "Latest",
-                logo: "https://cdn.worldvectorlogo.com/logos/microsoft-azure-1.svg"
-            },
-            {
-                name: "Angular",
-                category: "frontend",
-                description: "Platform for building mobile and desktop web applications.",
-                popularity: 82,
-                github_stars: "93k",
-                latest_version: "17.0.4",
-                logo: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg"
-            }
-        ];
+       const enhancedTechnologies = [
+  ...technologiesData,
+  {
+    name: "TypeScript",
+    category: "frontend",
+    description: "Strongly typed programming language that builds on JavaScript.",
+    popularity: 93,
+    github_stars: "98k",
+    latest_version: "5.3.2",
+    logo: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
+    documentation_url: "https://www.typescriptlang.org/docs/",
+    github_url: "https://github.com/microsoft/TypeScript",
+    tutorial_url: "https://www.typescripttutorial.net/"
+  },
+  {
+    name: "Python",
+    category: "backend",
+    description: "High-level programming language for web development and data science.",
+    popularity: 96,
+    github_stars: "58k",
+    latest_version: "3.12.0",
+    logo: "https://cdn.worldvectorlogo.com/logos/python-5.svg",
+    documentation_url: "https://docs.python.org/3/",
+    github_url: "https://github.com/python/cpython",
+    tutorial_url: "https://www.learnpython.org/"
+  },
+  {
+    name: "Redis",
+    category: "database",
+    description: "In-memory data structure store for caching and real-time applications.",
+    popularity: 84,
+    github_stars: "65k",
+    latest_version: "7.2.3",
+    logo: "https://cdn.worldvectorlogo.com/logos/redis.svg",
+    documentation_url: "https://redis.io/docs/",
+    github_url: "https://github.com/redis/redis",
+    tutorial_url: "https://www.tutorialspoint.com/redis/"
+  },
+  {
+    name: "Jenkins",
+    category: "devops",
+    description: "Open-source automation server for continuous integration and deployment.",
+    popularity: 78,
+    github_stars: "22k",
+    latest_version: "2.426.1",
+    logo: "https://cdn.worldvectorlogo.com/logos/jenkins-1.svg",
+    documentation_url: "https://www.jenkins.io/doc/",
+    github_url: "https://github.com/jenkinsci/jenkins",
+    tutorial_url: "https://www.javatpoint.com/jenkins"
+  },
+  {
+    name: "Azure",
+    category: "cloud",
+    description: "Microsoft cloud computing platform with integrated services.",
+    popularity: 89,
+    github_stars: "N/A",
+    latest_version: "Latest",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg",
+    documentation_url: "https://learn.microsoft.com/en-us/azure/",
+    github_url: "https://github.com/Azure",
+    tutorial_url: "https://learn.microsoft.com/en-us/training/azure/"
+  },
+  {
+    name: "Angular",
+    category: "frontend",
+    description: "Platform for building mobile and desktop web applications.",
+    popularity: 82,
+    github_stars: "93k",
+    latest_version: "17.0.4",
+    logo: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg",
+    documentation_url: "https://angular.io/docs",
+    github_url: "https://github.com/angular/angular",
+    tutorial_url: "https://angular.io/start"
+  }
+];
+
+                // logo: "https://cdn.worldvectorlogo.com/logos/microsoft-azure-1.svg"
 
         // Update technologies data with enhanced version
         technologiesData.push(...enhancedTechnologies.slice(9));
@@ -748,74 +795,75 @@
 
         // Technology detail modal (enhanced feature)
         function showTechDetails(techName) {
-            const tech = technologiesData.find(t => t.name === techName);
-            if (!tech) return;
-            
-            // Create modal HTML
-            const modal = document.createElement('div');
-            modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
-            modal.innerHTML = `
-                <div class="gradient-card rounded-2xl p-8 max-w-2xl w-full max-h-96 overflow-y-auto">
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="flex items-center">
-                            <span class="text-5xl mr-4">${tech.icon}</span>
-                            <div>
-                                <h2 class="text-3xl font-bold text-white">${tech.name}</h2>
-                                <span class="inline-block px-3 py-1 bg-blue-500 text-white text-sm rounded-full mt-2">
-                                    ${tech.category.charAt(0).toUpperCase() + tech.category.slice(1)}
-                                </span>
-                            </div>
-                        </div>
-                        <button onclick="this.closest('.fixed').remove()" class="text-gray-400 hover:text-white text-2xl">×</button>
+    const tech = technologiesData.find(t => t.name === techName);
+    if (!tech) return;
+
+    // Create modal HTML
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+    modal.innerHTML = `
+        <div class="gradient-card rounded-2xl p-8 max-w-2xl w-full max-h-96 overflow-y-auto relative">
+            <div class="flex justify-between items-start mb-6">
+                <div class="flex items-center">
+                    <img src="${tech.logo}" alt="${tech.name} logo" class="w-12 h-12 mr-4">
+                    <div>
+                        <h2 class="text-3xl font-bold text-white">${tech.name}</h2>
+                        <span class="inline-block px-3 py-1 bg-blue-500 text-white text-sm rounded-full mt-2">
+                            ${tech.category.charAt(0).toUpperCase() + tech.category.slice(1)}
+                        </span>
                     </div>
-                    
-                    <p class="text-gray-300 mb-6 text-lg">${tech.description}</p>
-                    
-                    <div class="grid grid-cols-2 gap-6 mb-6">
-                        <div>
-                            <h3 class="text-lg font-semibold text-white mb-2">Statistics</h3>
-                            <div class="space-y-2">
-                                <div class="flex justify-between">
-                                    <span class="text-gray-400">Popularity:</span>
-                                    <span class="text-green-400 font-semibold">${tech.popularity}%</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-gray-400">GitHub Stars:</span>
-                                    <span class="text-blue-400 font-semibold">${tech.github_stars}</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-gray-400">Latest Version:</span>
-                                    <span class="text-purple-400 font-semibold">${tech.latest_version}</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-lg font-semibold text-white mb-2">Quick Actions</h3>
-                            <div class="space-y-2">
-                                <button class="w-full px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors">
-                                    View Documentation
-                                </button>
-                                <button class="w-full px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition-colors">
-                                    GitHub Repository
-                                </button>
-                                <button class="w-full px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors">
-                                    Try Tutorial
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-gray-700 rounded-lg h-3 mb-2">
-                        <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-3 rounded-lg transition-all duration-500" 
-                             style="width: ${tech.popularity}%"></div>
-                    </div>
-                    <p class="text-sm text-gray-400 text-center">Overall Technology Rating</p>
                 </div>
-            `;
-            
-            document.body.appendChild(modal);
-        }
+                <button onclick="this.closest('.fixed').remove()" class="text-gray-400 hover:text-white text-2xl">×</button>
+            </div>
+
+            <p class="text-gray-300 mb-6 text-lg">${tech.description}</p>
+
+            <div class="grid grid-cols-2 gap-6 mb-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Statistics</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Popularity:</span>
+                            <span class="text-green-400 font-semibold">${tech.popularity}%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">GitHub Stars:</span>
+                            <span class="text-blue-400 font-semibold">${tech.github_stars}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Latest Version:</span>
+                            <span class="text-purple-400 font-semibold">${tech.latest_version}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Quick Actions</h3>
+                    <div class="space-y-2">
+                        <a href="${tech.documentation_url}" target="_blank" class="w-full block text-center px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors">
+                            View Documentation
+                        </a>
+                        <a href="${tech.github_url}" target="_blank" class="w-full block text-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition-colors">
+                            GitHub Repository
+                        </a>
+                        <a href="${tech.tutorial_url}" target="_blank" class="w-full block text-center px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors">
+                            Try Tutorial
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-700 rounded-lg h-3 mb-2">
+                <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-3 rounded-lg transition-all duration-500" 
+                    style="width: ${tech.popularity}%"></div>
+            </div>
+            <p class="text-sm text-gray-400 text-center">Overall Technology Rating</p>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+}
+
 
         // Add click events to technology cards for detailed view
         document.addEventListener('click', function(e) {
